@@ -1,0 +1,8 @@
+@font-face{
+	font-family: 'NavFont';
+	src: url('/fonts/nav.woff')format('woff');
+}
+
+.NavFont{
+	font-family: 'NavFont';
+}
