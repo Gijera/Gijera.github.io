@@ -2,3 +2,9 @@
 layout: nav
 ---
 <h1>代码</h1>
+
+<ul>
+{% for code in site.codes %}
+	<li><a href="{{site.baseurl}}{{code.url}}">{{code.title}}</a></li>
+{% endfor %}
+</ul>

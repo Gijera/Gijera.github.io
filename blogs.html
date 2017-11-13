@@ -2,3 +2,14 @@
 layout: nav
 ---
 <h1>博客</h1>
+<ul>
+	{% for blog in site.posts %}
+	<li>
+		<a href="{{site.baseurl}}{{blog.url}}">
+			{{blog.title}}
+		</a>
+		<p>{{blog.date | date: '%B %d %Y'}}</p>
+		<p>{{blog.excerpt}}</p>
+	</li>
+	{% endfor %}
+</ul>

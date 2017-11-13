@@ -2,3 +2,9 @@
 layout: nav
 ---
 <h1>语言</h1>
+
+<ul>
+{% for language in site.languages %}
+	<li><a href="{{site.baseurl}}{{language.url}}">{{language.title}}</a></li>
+{% endfor %}
+</ul>
