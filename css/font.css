@@ -3,6 +3,24 @@
 	src: url('/fonts/nav.woff')format('woff');
 }
 
+@font-face{
+	font-family: 'Rokkitt';
+	src: url('/fonts/Rokkitt-Regular.ttf')format('ttf');
+}
+
+@font-face{
+	font-family: 'Orbitron';
+	src: url('/fonts/Orbitron-Regular.ttf')format('ttf');
+}
+
 .NavFont{
 	font-family: 'NavFont';
+}
+
+.Rokkitt{
+	font-family: 'Rokkitt';
+}
+
+.Orbitron{
+	font-family: 'Orbitron';
 }
