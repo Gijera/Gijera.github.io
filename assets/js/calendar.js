@@ -27,12 +27,26 @@ function getMonthDay(month, year){
 var date = new Date();
 showCalendar(date);
 
+//左键点击
+var timeLeft = document.getElementById('time-left');
+timeLeft.onclick=function(){
+    date.setMonth(date.getMonth()-1);
+    showCalendar(date);
+}
+//右键点击
+var timeRight = document.getElementById('time-right');
+timeRight.onclick=function(){
+    date.setMonth(date.getMonth()+1);
+    showCalendar(date);
+}
+
 function showCalendar(showDate){
     //获取对象
     var timeHeader = document.getElementById('time-header');
     var timeBody = document.getElementById('time-body');
     //定义日历数组
     var calendarArray = [
+        [0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0],
@@ -51,6 +65,9 @@ function showCalendar(showDate){
             weekFlag = 0;
             cycleFlag++;
         }
+        if(cycleFlag > 5){
+            cycleFlag = 0;
+        }
     }
     //获得日历体部
     var timeBodyHtml = '';
@@ -63,10 +80,22 @@ function showCalendar(showDate){
 
     var tableBodyHtml = '';
     for(i = 0; i < calendarArray.length; i++){
+        if(i != 0 && calendarArray[i][0] === 0)
+            break;
         tableBodyHtml += "<tr>";
         for(j = 0; j < calendarArray[i].length; j++){
-            tableBodyHtml += "<td>";
-            tableBodyHtml += calendarArray[i][j];
+            tableBodyHtml += "<td ";
+            if(calendarArray[i][j] !== 0){
+                tableBodyHtml += "class='time-element";
+                timeToday = new Date();
+                /*
+                if(showDate.getMonth() === timeToday.getMonth()){
+                    tableBodyHtml += " time-today";
+                }*/
+                tableBodyHtml += "'>";
+                tableBodyHtml += calendarArray[i][j];
+            }else
+                tableBodyHtml += ">";
             tableBodyHtml += "</td>";
         }
         tableBodyHtml += "</tr>";
