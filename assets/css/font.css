@@ -1,16 +1,16 @@
 @font-face{
 	font-family: 'NavFont';
-	src: url('/fonts/nav.woff')format('woff');
+	src: url('/assets/fonts/nav.woff')format('woff');
 }
 
 @font-face{
 	font-family: 'Rokkitt';
-	src: url('/fonts/Rokkitt-Regular.ttf')format('ttf');
+	src: url('/assets/fonts/Rokkitt-Regular.ttf')format('ttf');
 }
 
 @font-face{
 	font-family: 'Orbitron';
-	src: url('/fonts/Orbitron-Regular.ttf')format('ttf');
+	src: url('/assets/fonts/Orbitron-Regular.ttf')format('ttf');
 }
 
 .NavFont{

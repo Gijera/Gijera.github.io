@@ -3,6 +3,9 @@ exclude: ['README.md']
 permalink: pretty
 encoding: UTF-8
 
+plugins:
+  - jekyll-assets
+
 collections:
   codes:
     output: true
