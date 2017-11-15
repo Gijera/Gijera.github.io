@@ -1,9 +1,10 @@
 :root{
+	--body-color: #3b5998;
 	--nav-background: #dddddd;
-	--nav-color: #34495e;
+	--nav-color: #3b5998;
 	--nav-home-color: #1abc9c;
 	--nav-code-color: #3498db;
 	--nav-blog-color: #9b59b6;
 	--nav-lang-color: #e74c3c;
 	--nav-work-color: #e67e22;
-};
+}

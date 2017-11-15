@@ -3,8 +3,9 @@
 
 {% include_relative font.css %}
 {% include_relative color.css %}
+
 body{
-	color: var(--nav-color);
+	color: var(--body-color);
 	background-color: white;
 }
 nav {
