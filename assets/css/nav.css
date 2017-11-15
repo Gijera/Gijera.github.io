@@ -3,16 +3,15 @@
 
 {% include_relative font.css %}
 body{
-	font-family: 'Rokkitt';
 	color: #34495e;
-	background-color: #cccccc;
+	background-color: #ffffff;
 }
 nav {
 	margin: 25px auto 0;
 	position: relative;
 	width: 80%;
 /*	background-color: #34495e;*/
-	background-color: #eeeeee;
+	background-color: #dddddd;
 	border-radius: 8px;
 	font-size: 0;
 }
