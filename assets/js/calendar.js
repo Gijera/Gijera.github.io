@@ -25,6 +25,9 @@ function getMonthDay(month, year){
 
 //定义变量
 var date = new Date();
+var todayYear = date.getFullYear();
+var todayMonth = date.getMonth();
+var todayDate = date.getDate();
 showCalendar(date);
 
 //左键点击
@@ -87,11 +90,9 @@ function showCalendar(showDate){
             tableBodyHtml += "<td ";
             if(calendarArray[i][j] !== 0){
                 tableBodyHtml += "class='time-element";
-                timeToday = new Date();
-                /*
-                if(showDate.getMonth() === timeToday.getMonth()){
+                if((showDate.getFullYear() === todayYear) && (showDate.getMonth() === todayMonth) && (calendarArray[i][j] === todayDate)){
                     tableBodyHtml += " time-today";
-                }*/
+                }
                 tableBodyHtml += "'>";
                 tableBodyHtml += calendarArray[i][j];
             }else

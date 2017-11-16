@@ -1,23 +1,28 @@
 #calendar{
 	margin-top: 20px;
-	font-family: 'Orbitron';
-	font-size: 12px;
+	font-family: 'Rokkitt';
+	font-size: 16px;
 	font-weight: 700;
 	text-align: center;
 	border-radius: 8px;
 	background: var(--calendar-background-color);
 }
-/*
-#calendar button{
-	padding: 10px;
-	border: 0px;
-	border-radius: 8px;
-	background-color: var(--calendar-button-background-color);
-}*/
 
 #calendar button:hover{
 	color: white;
 	background-color: var(--body-color);
+}
+
+#calendar table{
+
+}
+
+#calendar th{
+	text-align: center;
+}
+
+#calendar td{
+	padding: 2px;
 }
 
 #time-header{
@@ -42,8 +47,8 @@
 }
 
 .time-today{
-	color: white;
-	background-color: var(--body-red-color);
+	color: var(--body-color);
+	background-color: white;
 }
 
 .time-element{

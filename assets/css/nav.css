@@ -1,5 +1,6 @@
 body{
 	color: var(--body-color);
+	font-family: 'Rokkitt';
 	background-color: white;
 }
 nav {
