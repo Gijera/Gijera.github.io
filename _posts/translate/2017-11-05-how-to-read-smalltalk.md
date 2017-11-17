@@ -1,6 +1,7 @@
 ---
+layout: blogs
 title: 如何阅读Smalltalk程序
-image: smalltalk-squeak.jpg
+category: translate
 ---
 > 翻译于[Smalltalk Tutorial](http://wiki.c2.com/?SmalltalkTutorial)中的[readingSmalltalk.pdf](http://www.jera.com/techinfo/readingSmalltalk.pdf).
 

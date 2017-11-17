@@ -1,6 +1,7 @@
 ---
+layout: blogs
 title: 如何选择(和贡献)你的第一个开源项目
-image: first-open-object.png
+category: translate
 ---
 > 翻译于github的文章推荐：[How to choose (and contribute to) your first open source project](https://github.com/collections/choosing-projects)
  ——作者 [Katrina Owen](https://github.com/kytrinyx?page=2&tab=repositories)

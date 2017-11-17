@@ -1,0 +1,12 @@
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/article-list.css">
+
+<div class="article-list">
+	<div class="article-title">
+		<h3>List</h3>
+		{% if include.classify == 'posts' %}
+			{% for blog in site.posts %}
+			<li><a href="{{blog.url}}"><i class="fa fa-hashtag"> {{blog.title}}</i></a></li>
+			{% endfor %}
+		{% endif %}
+	</div>
+</div>

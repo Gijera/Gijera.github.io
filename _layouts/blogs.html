@@ -1,0 +1,35 @@
+---
+layout: nav
+---
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/blogs.css">
+
+<div class="container" id="blogs">
+	<div class="row">
+		<div class="col-md-8 blogs-body">
+				{{content}}
+		</div>
+		<div class="col-md-4">
+			<div>
+				{% include calendar.html %}
+			</div>
+			<div>
+				<div class="category">
+					<h3>Category</h3>
+					{% for category in site.categories %}
+					<li><a href="#"><i class="fa fa-bookmark"> {{category | first}} ({{category | last | size}})</i></a></li>
+					{% endfor %}
+				</div>
+			</div>
+			<div>
+				<div class="article-list">
+					<div class="article-title">
+						<h3>List</h3>
+						{% for blog in site.posts %}
+						<li><a href="{{blog.url}}"><i class="fa fa-hashtag"> {{blog.title}}</i></a></li>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
