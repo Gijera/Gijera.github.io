@@ -1,0 +1,51 @@
+#toDoList{
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+	border-radius: 8px;
+	background-color: var(--nav-background);
+}
+
+#toDoList .btn{
+	font-weight: 700;
+}
+
+#toDoList .btn:hover{
+	border: 0px solid white;
+}
+
+#toDoList-item{
+	margin-top: 20px;
+	margin-left: 10px;
+	text-align: left;
+}
+
+#toDoList-item li{
+	list-style-type: none;	
+}
+
+#toDoList-item .item{
+	margin-top: 5px;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+#toDoList-item .item:hover{
+	background-color: var(--calendar-button-background-color);
+}
+
+#doing{
+	color: white;
+	background-color: var(--body-color);
+	border-radius: 8px 0px 0px 8px;
+}
+
+#done{
+	color: var(--body-color);
+	background-color: var(--calendar-button-background-color);
+	border-radius: 0px 8px 8px 0px;
+}
+
+#done-item{
+	display: none;
+}

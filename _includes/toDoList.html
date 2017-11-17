@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/toDoList.css">
+
+<div id="toDoList">
+	<div class="btn-group btn-group-justified" role="group">
+		<div class="btn-group" role="group">
+			<button class="btn btn-default" id="doing">进行中</button>
+		</div>
+		<div class="btn-group" role="group">
+			<button class="btn btn-default" id="done">已完成</button>
+		</div>
+	</div>
+	<div id="toDoList-item">
+		<div id="doing-item">
+			{% for todolist in site.data.toDoList-ing %}
+			<li class="item"><i class="fa fa-lightbulb-o"></i> {{todolist.item}}</li>
+			{% endfor %}
+		</div>
+		<div id="done-item">
+			{% for todolist in site.data.toDoList-done %}
+			<li class="item"><i class="fa fa-bug"></i><s> {{todolist.item}}</s></li>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="{{site.baseurl}}/assets/js/toDoList.js"></script>
