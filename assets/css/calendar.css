@@ -47,8 +47,10 @@
 }
 
 .time-today{
-	color: var(--body-color);
-	background-color: white;
+	/*color: var(--body-red-color);*/
+	background: transparent url(/assets/image/calendar/today.png) no-repeat;
+	background-size: 30px 30px;
+	background-position: 50%;
 }
 
 .time-element{
@@ -56,6 +58,9 @@
 }
 
 .time-element:hover{
+	/*background: transparent url(/assets/image/calendar/current.png) no-repeat;
+	background-size: 30px 30px;
+	background-position: 50%;*/
 	color: white;
-	background-color: var(--body-color);
+	/*background-color: var(--body-color);*/
 }
