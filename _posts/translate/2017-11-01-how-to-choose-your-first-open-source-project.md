@@ -5,9 +5,8 @@ category: translate
 ---
 > 翻译于github的文章推荐：[How to choose (and contribute to) your first open source project](https://github.com/collections/choosing-projects)
  ——作者 [Katrina Owen](https://github.com/kytrinyx?page=2&tab=repositories)
-
+ 
 第一个贡献总是令人生畏的，这有点像走进一间全是陌生人的房间，他们大多数人之间似乎都认识对方。你不懂他们的圈内笑话(inside jokes)，或是圈外的笑话，进一步说，他们谈论的流行文化(pop culture)是你从来没有听说过的。你不知道如何融入他们之间，如果有人侧身让你加入他们的交谈，他们可能会给你一个轻蔑的眼神，他们会告诉你，你穿错了衣服，你眼睛的颜色不对，甚至你的发音也不对。
-
 这可能不仅仅发生在你提交第一个pull request，甚至打开一个issue也让你感到胆怯。你遇到的是真正的问题吗？他们可能会告诉你你非常的愚蠢——因为你应该去做点什么小玩意。
 
 作为[Exercism](http://exercism.io)项目的维护者，我看到过许多人开始使用新的编程语言，提交或接受关于代码的反馈，以及对开源项目作出第一个贡献。你的第一个贡献可能很可怕，但是有了正确的指导，我相信你会像我一样热爱开源社区并热衷于成为其中的参与者。

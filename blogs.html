@@ -3,14 +3,18 @@ layout: blogs
 title: blog
 ---
 
-<ul>
-	{% for blog in site.posts %}
-	<li>
-		<a href="{{site.baseurl}}{{blog.url}}">
-			{{blog.title}}
-		</a>
-		<p>{{blog.date | date: '%B %d %Y'}}</p>
-		<p>{{blog.excerpt}}</p>
-	</li>
-	{% endfor %}
-</ul>
+{% for blog in site.posts %}
+<div class="blogs-article">
+	<div class="blogs-article-title">
+		<h3><a href="{{site.baseurl}}{{blog.url}}">{{blog.title}}</a></h3>
+	</div>
+	<div class="blogs-article-excerpt">
+		{{blog.excerpt | remove: '<p>' | remove: '</p>' }}
+	</div>
+	<div class="blogs-article-info">
+		<span class="Orbitron">{{blog.category}}</span>
+		<span>&nbsp;|&nbsp;</span>
+		<span class="Orbitron">{{blog.date | date: '%B-%d-%Y'}} </span>
+	</div>
+</div>
+{% endfor %}

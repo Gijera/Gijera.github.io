@@ -5,6 +5,7 @@
 #blogs{
 	padding: 20px;
 	margin-top: 20px;
+	margin-bottom: 20px;
 	border-radius: 8px;
 	background-color: var(--nav-background);
 }
@@ -29,4 +30,30 @@
 
 .category li{
 	list-style-type: none;
+}
+
+.blogs-article{
+	margin: 10px;
+	padding: 20px;
+	/*text-align: center;*/
+	border-top: 2px solid var(--body-color);
+	/*border-radius: 8px;*/
+	/*background-color: var(--calendar-button-background-color);*/
+}
+
+.blogs-article-image{
+	display: inline-block;
+	width: 150px;
+	background-color: blue;
+}
+
+.blogs-article-text{
+	display: inline-block;
+	background-color: yellow;
+}
+
+.blogs-article-info{
+	padding: 5px;
+	text-align: right;
+	/*background-color: orange;*/
 }

@@ -3,8 +3,8 @@ layout: blogs
 title: 如何阅读Smalltalk程序
 category: translate
 ---
-> 翻译于[Smalltalk Tutorial](http://wiki.c2.com/?SmalltalkTutorial)中的[readingSmalltalk.pdf](http://www.jera.com/techinfo/readingSmalltalk.pdf).
-
+> 翻译于[Smalltalk Tutorial](http://wiki.c2.com/?SmalltalkTutorial)中的[readingSmalltalk.pdf](http://www.jera.com/techinfo/readingSmalltalk.pdf)
+ 
 本文简单介绍了Smalltalk语言的一些语法规则，Smalltalk语言中使用MVC模式来构建用户界面，即MVC模式是起源于Smalltalk语言的，不过Smalltalk的中文资料太少，这篇翻译文章也是为我自己将要写的续集文章——**浅谈MVC框架模式**做一个铺垫。
 
 # 阅读Smalltalk程序
@@ -142,6 +142,7 @@ is:message:parameters:
 |两个参数|[:x :y\|"有两个参数的闭包"]|value:firstActual value:secondActual|
 |...|||
 示例：
+
 ```
 [object messageSent] value.
 ```
@@ -220,6 +221,7 @@ Transcript nextPut: object; nextPut: ' '; nextPutAll: text; cr.
 |其他|从左至右|
 当然，括号可以改变优先级，就像其他语言，就是这样！
 你会觉得不能这样做，它并不会像你想像的那样运行：
+
 ```
 3 + 4 * 5 = 35 ! ? !
 ```
