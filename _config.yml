@@ -2,14 +2,3 @@ baseurl: ''
 exclude: ['README.md']
 permalink: pretty
 encoding: UTF-8
-
-plugins:
-  - jekyll-assets
-
-collections:
-  codes:
-    output: true
-    permalink: /codes/:path/
-  languages:
-    output: true
-    permalink: /languages/:path/

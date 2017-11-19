@@ -1,13 +1,8 @@
-body{
-	color: var(--body-color);
-	font-family: 'Rokkitt';
-	background-color: white;
-}
 nav {
 	margin: 25px auto 0;
 	position: relative;
 	width: 80%;
-	background-color: var(--nav-background);
+	background-color: #dddddd;
 	border-radius: 8px;
 	font-size: 0;
 }
@@ -22,11 +17,10 @@ nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
-	color: var(--nav-color);
+	color: #3b5998;
 	cursor: pointer;
 }
 nav a:hover{
-	/*color: white;*/
 	text-decoration: none;
 }
 nav .nav-current{
@@ -41,43 +35,34 @@ nav .animation {
 	border-radius: 8px;
 }
 a:nth-child(1) {
-	width: 20%;
+	width: 25%;
 }
 a:nth-child(2) {
-	width: 20%;
+	width: 25%;
 }
 a:nth-child(3) {
-	width: 20%;
+	width: 25%;
 }
 a:nth-child(4) {
-	width: 20%;
-}
-a:nth-child(5) {
-	width: 20%;
+	width: 25%;
 }
 nav .start-home, a:nth-child(1):hover~.animation {
-	width: 20%;
+	width: 25%;
 	left: 0;
-	background-color: var(--nav-home-color);
-/*	border: 5px solid #1abc9c;*/
+	background-color: #1abc9c;
 }
 nav .start-code, a:nth-child(2):hover~.animation {
-	width: 20%;
-	left: 20%;
-	background-color: var(--nav-code-color);
+	width: 25%;
+	left: 25%;
+	background-color: #3498db;
 }
 nav .start-blog, a:nth-child(3):hover~.animation {
-	width: 20%;
-	left: 40%;
-	background-color: var(--nav-blog-color);
+	width: 25%;
+	left: 50%;
+	background-color: #9b59b6;
 }
-nav .start-lang, a:nth-child(4):hover~.animation {
-	width: 20%;
-	left: 60%;
-	background-color: var(--nav-lang-color);
-}
-nav .start-works, a:nth-child(5):hover~.animation {
-	width: 20%;
-	left: 80%;
-	background-color: var(--nav-work-color);
+nav .start-works, a:nth-child(4):hover~.animation {
+	width: 25%;
+	left: 75%;
+	background-color: #e74c3c;
 }

@@ -4,7 +4,6 @@
 	<a href="{{site.baseurl}}/" class="{% if page.url == '/' %}nav-current{% endif %}"> :HOME </a>
 	<a href="{{site.baseurl}}/codes/" class="{% if page.url == '/codes/' %}nav-current{% endif %}"> ^CODE </a>
 	<a href="{{site.baseurl}}/blogs/" class="{% if page.url == '/blogs/' %}nav-current{% endif %}"> &#9824;BLOG </a>
-	<a href="{{iste.baseurl}}/languages/" class="{% if page.url == '/languages/' %}nav-current{% endif %}"> #LANG </a>
 	<a href="{{site.baseurl}}/works/" class="{% if page.url == '/works/' %}nav-current{% endif %}"> $WORK </a>
-	<div class="animation start-{% if page.url contains 'codes/' %}code{% elsif page.url contains 'blogs' %}blog{% elsif page.url contains 'languages' %}lang{% elsif page.url contains 'works' %}works{% else %}home{% endif %}"></div>
+	<div class="animation start-{% if page.url contains 'codes' %}code{% elsif page.url contains 'blogs' %}blog{% elsif page.url contains 'works' %}works{% else %}home{% endif %}"></div>
 </nav>
