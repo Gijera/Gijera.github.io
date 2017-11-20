@@ -5,9 +5,15 @@
 	background-color: #dddddd;
 }
 
-#blogs h3{
+#blogs h1{
 	margin: 0px;
 	padding: 0px;
+}
+
+#blogs .btn{
+	background-color: rgba(0, 0, 0, 0);
+	padding: 3px 8px 3px 8px;
+	margin: 5px;
 }
 
 #blogs .index{
@@ -17,11 +23,15 @@
 }
 
 #blogs .index-items{
-	padding: 10px;
+	padding-left: 10px;
 }
 
 #blogs .blog-item{
 	margin: 10px;
 	padding: 10px;
 	border-top: #3b5998 2px solid;
+}
+
+#blogs .blog-footer{
+	text-align: right;
 }

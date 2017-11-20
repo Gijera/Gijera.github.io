@@ -5,7 +5,22 @@ title: blogs
 
 {% for blog in site.posts %}
 	<div class="blog-item">
-		<h3><a href="{{site.baseurl}}{{blog.url}}">{{blog.title}} <i class="fa fa-hand-o-left"></i></a></h3>
-		{{blog.excerpt}}
+		<h1>Title: <a href="{{site.baseurl}}{{blog.url}}">{{blog.title}}</a></h1>
+		<div>
+			 <i class="fa fa-paragraph fa-2x"></i> {{blog.excerpt | remove: '<p>' | remove: '</p>' }}
+		</div>
+		<div class="blog-footer">
+			Category: <span>{{blog.categories}}</span>
+			&nbsp;|
+			Tag: 
+			{% for tag in blog.tags %}
+				<span>
+					{{tag}}
+				</span>
+			{% endfor %}
+			&nbsp;|&nbsp;
+			<i class="fa fa-clock-o"></i>
+			<span>{{blog.date | date: '%Y-%m-%d'}}</span>
+		</div>
 	</div>
 {% endfor %}

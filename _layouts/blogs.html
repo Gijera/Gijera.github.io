@@ -7,23 +7,23 @@ nav: blogs
 
 <div class="container" id="blogs">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-8 col-sm-8">
 			{{content}}
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4 col-sm-4">
 			<div class="index">
-				<h3>Category</h3>
+				<h4><i class="fa fa-bookmark"></i> 目录(Category)</h4>
 				<div class="index-items">
 					{% for category in site.categories %}
-					<li><a href="{{site.baseurl}}/categories/{{category | first}}"><i class="fa fa-bookmark"></i> {{category | first}} ({{category | last | size}})</a></li>
+					<li><a href="{{site.baseurl}}/categories/{{category | first}}"> {{category | first}} ({{category | last | size}})</a></li>
 					{% endfor %}
 				</div>
 			</div>
 			<div class="index">
-				<h3>Tag</h3>
+				<h4><i class="fa fa-tags"></i> 标签(Tag)</h4>
 				<div class="index-items">
 					{% for tag in site.tags %}
-					<li><a href="#"><i class="fa fa-tag"></i> {{tag | first}} ({{tag | last | size}})</a></li>
+						<button class="btn"><a href="#">{{tag | first}} ({{tag | last | size}})</a></button>
 					{% endfor %}
 				</div>
 			</div>
