@@ -1,22 +1,11 @@
 ---
 layout: blogs
+title: blogs
 ---
 
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
-Blog<br>
+{% for blog in site.posts %}
+	<div class="blog-item">
+		<h3><a href="{{site.baseurl}}{{blog.url}}">{{blog.title}} <i class="fa fa-hand-o-left"></i></a></h3>
+		{{blog.excerpt}}
+	</div>
+{% endfor %}
