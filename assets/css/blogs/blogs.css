@@ -1,0 +1,21 @@
+#blogs{
+	margin-top: 20px;
+	padding: 20px;
+	border-radius: 8px;
+	background-color: #dddddd;
+}
+
+#blogs h3{
+	margin: 0px;
+	padding: 0px;
+}
+
+#blogs .index{
+	margin-top: 20px;
+	padding: 10px;
+	border-top: #3b5998 2px solid;
+}
+
+#blogs .index-items{
+	padding: 10px;
+}

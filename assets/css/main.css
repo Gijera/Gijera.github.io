@@ -3,3 +3,7 @@ body{
 	font-family: 'Rokkitt';
 	background-color: white;
 }
+
+li{
+	list-style-type: none;
+}
