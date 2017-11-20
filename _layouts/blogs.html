@@ -23,7 +23,7 @@ nav: blogs
 				<h4><i class="fa fa-tags"></i> 标签(Tag)</h4>
 				<div class="index-items">
 					{% for tag in site.tags %}
-						<button class="btn"><a href="#">{{tag | first}} ({{tag | last | size}})</a></button>
+						<li><a href="{{site.baseurl}}/tags/{{tag | first}}">{{tag | first}} ({{tag | last | size}})</a></li>
 					{% endfor %}
 				</div>
 			</div>
