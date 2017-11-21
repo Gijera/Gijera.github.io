@@ -35,3 +35,7 @@
 #blogs .blog-footer{
 	text-align: right;
 }
+
+.time-body a{
+	text-decoration: underline;
+}
