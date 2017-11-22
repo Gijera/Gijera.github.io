@@ -41,7 +41,7 @@ function showCalendar(showDate){
     showDate.setDate(1);
     var cycleFlag = 0;
     var weekFlag = showDate.getDay();
-    for(i = 0; i < getMonthDay(showDate.getMonth(), showDate.getFullYear()); i++){
+    for(var i = 0; i < getMonthDay(showDate.getMonth(), showDate.getFullYear()); i++){
         calendarArray[cycleFlag][weekFlag++] = i+1;
         if(weekFlag > 6){
             weekFlag = 0;
@@ -54,18 +54,18 @@ function showCalendar(showDate){
     //获得日历体部
     var timeBodyHtml = '';
     var tableHeaderHtml = "<tr>";
-    for(i = 0; i < weekArray.length; i++){
+    for(var i = 0; i < weekArray.length; i++){
         tableHeaderHtml += "<th>"+weekArray[i]+"</th>";
     }
     tableHeaderHtml += "</tr>";
     timeBodyHtml += tableHeaderHtml;
 
     var tableBodyHtml = '';
-    for(i = 0; i < calendarArray.length; i++){
+    for(var i = 0; i < calendarArray.length; i++){
         if(i != 0 && calendarArray[i][0] === 0)
             break;
         tableBodyHtml += "<tr>";
-        for(j = 0; j < calendarArray[i].length; j++){
+        for(var j = 0; j < calendarArray[i].length; j++){
             tableBodyHtml += "<td>";
             if(calendarArray[i][j] !== 0){
             	tableBodyHtml += calendarArray[i][j];
@@ -77,4 +77,25 @@ function showCalendar(showDate){
     timeBodyHtml += tableBodyHtml;
     //显示日历体部
     timeBody.innerHTML = timeBodyHtml;
+
+    //添加链接
+    var calendarLeft = document.getElementById('calendar-left');
+    var calendarRight = document.getElementById('calendar-right');
+    var leftLink = '';
+    var rightLink = '';
+    showDate.setMonth(showDate.getMonth()+1);
+    var currentDateString = showDate.getFullYear() + '-' + ('0'+showDate.getMonth()).slice(-2);
+    for(var i = 0; i < calendarDateArray.length; i++){
+        if(currentDateString == calendarDateArray[i]){
+            if(i != 0){
+                rightLink = '/calendar/'+calendarDateArray[i-1];
+            }
+            if( i != calendarDateArray.length - 1){
+                leftLink = '/calendar/'+calendarDateArray[i+1];
+            }
+            break;
+        }
+    }
+    calendarLeft.setAttribute('href', leftLink);
+    calendarRight.setAttribute('href', rightLink);
 }

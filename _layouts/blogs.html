@@ -19,9 +19,9 @@ nav: blogs
 	
 					</table>
 					<div>
-						<span><a href=""><<</a></span>
+						<span><a id="calendar-left" href=""><<</a></span>
 						<span id="time-header"></span>
-						<span><a href="">>></a></span>
+						<span><a id="calendar-right" href="">>></a></span>
 					</div>
 				</div>
 			</div>
@@ -46,12 +46,27 @@ nav: blogs
 </div>
 
 <script type="text/javascript">
+	var calendarDateArray = [
+		{% for post in site.posts %}
+		    {% capture day %}{{ post.date | date: '%Y-%m' }}{% endcapture %}
+		    {% capture nday %}{{ post.next.date | date: '%Y-%m' }}{% endcapture %}
+		    {% if day != nday %}
+		        "{{ post.date | date: '%Y-%m' }}"{% unless forloop.last %},{% endunless %}
+		    {% endif %}
+		{% endfor %}
+	];
+
 	var date = new Date();
 	{% if page.calendar %}
 		var dateString = '{{page.calendar}}';
 		var dateArray = dateString.split('-');
 		var year = dateArray[0];
 		var month = dateArray[1];
+		date.setFullYear(year);
+		date.setMonth(month-1);
+	{% elsif page.date %}
+		var year = '{{page.date | date: "%Y"}}';
+		var month = '{{page.date | date: "%m"}}';
 		date.setFullYear(year);
 		date.setMonth(month-1);
 	{% endif %}
