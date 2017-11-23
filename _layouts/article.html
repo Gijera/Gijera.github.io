@@ -1,0 +1,34 @@
+---
+layout: blogs
+---
+<div class="article-item">
+	<h2>{{page.title}}</h2>
+	<div class="blog-footer">
+		Category:
+		<span>{{page.categories}}</span>
+		／
+		Tag: {
+		{% for tag in page.tags %}
+			<span class="blog-tag">
+				 {{tag}} {% unless forloop.last %},{% endunless %}
+			</span>
+		{% endfor %}
+		} ／
+		<span class="blog-time">{{page.date | date: '%Y-%m-%d  %a'}}</span>
+	</div>
+	<br>
+	{{content}}
+	<blockquote>
+		本站所有文章遵循自由转载-非商用-非衍生-保持署名<a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">[知识共享3.0协议]</a>
+		<br>
+		All aritcles of this website follow the CC-3.0 License.<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a>
+	</blockquote>
+	<ul class="pager">
+		{% if page.previous %}
+	    	<li class="previous"><a href="{{page.previous.url}}">上一篇：{{page.previous.title}}</a></li>
+	    {% endif %}
+    	{% if page.next %}
+	    	<li class="next"><a href="{{page.next.url}}">下一篇：{{page.next.title}} </a></li>
+	    {% endif %}
+  	</ul>
+</div>
