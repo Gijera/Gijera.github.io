@@ -13,12 +13,12 @@ nav: blogs
 		</div>
 		<div class="col-md-4 col-sm-4">
 			<div id="calendar" class="index">
-				<h4><i class="fa fa-calendar"></i> 日历(Calendar)</h4>
+				<h4><i class="fa fa-calendar"></i> 日历 <small>| Calendar</small></h4>
 				<div>
 					<table id="time-body" class="table">
 	
 					</table>
-					<div>
+					<div class="calendar-header">
 						<span><a id="calendar-left" href=""><<</a></span>
 						<span id="time-header"></span>
 						<span><a id="calendar-right" href="">>></a></span>
@@ -26,18 +26,18 @@ nav: blogs
 				</div>
 			</div>
 			<div class="index">
-				<h4><i class="fa fa-bookmark"></i> 目录(Category)</h4>
+				<h4><i class="fa fa-bookmark"></i> 目录 <small>| Category</small></h4>
 				<div class="index-items">
 					{% for category in site.categories %}
-					<li><a href="{{site.baseurl}}/categories/{{category | first}}"> {{category | first}} ({{category | last | size}})</a></li>
+					<li class="category-li"><a class="category-item" href="{{site.baseurl}}/categories/{{category | first}}"> {{category | first}} ({{category | last | size}})</a></li>
 					{% endfor %}
 				</div>
 			</div>
 			<div class="index">
-				<h4><i class="fa fa-tags"></i> 标签(Tag)</h4>
+				<h4><i class="fa fa-tags"></i> 标签 <small> | Tag</small></h4>
 				<div class="index-items">
 					{% for tag in site.tags %}
-						<li><a href="{{site.baseurl}}/tags/{{tag | first}}">{{tag | first}} ({{tag | last | size}})</a></li>
+						<div class="index-tag"><a href="{{site.baseurl}}/tags/{{tag | first}}"><i class="fa fa-tag"></i> {{tag | first}} ({{tag | last | size}})</a></div>
 					{% endfor %}
 				</div>
 			</div>
@@ -55,6 +55,16 @@ nav: blogs
 		    {% endif %}
 		{% endfor %}
 	];
+
+	var calendarDateUrlArray = [];
+	{% for post in site.posts %}
+	    {% capture day %}{{ post.date | date: '%Y-%m' }}{% endcapture %}
+	    {% capture nday %}{{ post.next.date | date: '%Y-%m' }}{% endcapture %}
+	    {% if day != nday %}
+	        calendarDateUrlArray["{{ post.date | date: '%Y-%m' }}"] = [];
+	    {% endif %}
+	    calendarDateUrlArray["{{post.date | date: '%Y-%m'}}"]["{{post.date | date: '%d'}}"] = "{{site.baseurl}}{{post.url}}";
+	{% endfor %}
 
 	var date = new Date();
 	{% if page.calendar %}

@@ -1,8 +1,29 @@
+<div class="page-data">
+	<i class="fa fa-search"></i> Category: {{page.category}}
+</div>
 {% for category in site.categories %}
     {% for posts in category %}
         {% if {{posts.first.categories}} contains {{page.category}} %}
             {% for post in posts %}
-		        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		        <div class="blog-item">
+					<h3><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
+					<div class="blog-footer">
+						Category:
+						<span class="class-find">{{post.categories}}</span>
+						／
+						Tag: {
+						{% for tag in post.tags %}
+							<span class="blog-tag">
+								 {{tag}} {% unless forloop.last %},{% endunless %}
+							</span>
+						{% endfor %}
+						} ／
+						<span class="blog-time">{{post.date | date: '%Y-%m-%d  %a'}}</span>
+					</div>
+					<div class="blog-excerpt">
+						 <i class="fa fa-quote-left"></i> {{post.excerpt | remove: '<p>' | remove: '</p>' }}
+					</div>
+				</div>
       		{% endfor %}
       	{% endif %}
     {% endfor %}

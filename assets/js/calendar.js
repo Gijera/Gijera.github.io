@@ -68,7 +68,15 @@ function showCalendar(showDate){
         for(var j = 0; j < calendarArray[i].length; j++){
             tableBodyHtml += "<td>";
             if(calendarArray[i][j] !== 0){
-            	tableBodyHtml += calendarArray[i][j];
+                var indexOne = showDate.getFullYear() + '-' + ('0'+(showDate.getMonth()+1)).slice(-2);
+                var indexTwo = ('0'+calendarArray[i][j]).slice(-2);
+                if(calendarDateUrlArray[indexOne].hasOwnProperty(indexTwo)){
+                    tableBodyHtml += ("<a href='"+calendarDateUrlArray[indexOne][indexTwo]+"'>");
+                    tableBodyHtml += calendarArray[i][j];
+                    tableBodyHtml += "</a>";
+                }else{
+            	   tableBodyHtml += calendarArray[i][j];
+                }
            	}
             tableBodyHtml += "</td>";
         }
@@ -78,7 +86,7 @@ function showCalendar(showDate){
     //显示日历体部
     timeBody.innerHTML = timeBodyHtml;
 
-    //添加链接
+    //添加月历链接
     var calendarLeft = document.getElementById('calendar-left');
     var calendarRight = document.getElementById('calendar-right');
     var leftLink = '';

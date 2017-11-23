@@ -1,23 +1,26 @@
+.container{
+	width: 95%;
+}
+
 #blogs{
 	margin-top: 20px;
+	margin-bottom: 20px;
 	padding: 20px;
 	border-radius: 8px;
 	background-color: #dddddd;
 }
 
-#blogs h1{
-	margin: 0px;
-	padding: 0px;
+.blog-item h3 a{
+	font-style: italic;
+	color: #555555;
 }
 
-#blogs .btn{
-	background-color: rgba(0, 0, 0, 0);
-	padding: 3px 8px 3px 8px;
-	margin: 5px;
+#blogs .fa-2x{
+	font-size: 21px;
 }
 
 #blogs .index{
-	margin-top: 20px;
+	margin-top: 10px;
 	padding: 10px;
 	border-top: #3b5998 2px solid;
 }
@@ -32,10 +35,114 @@
 	border-top: #3b5998 2px solid;
 }
 
-#blogs .blog-footer{
-	text-align: right;
+#blogs .fa-small{
+	font-size: 14px;
 }
 
-.time-body a{
-	text-decoration: underline;
+#blogs .blog-excerpt{
+	color: #999999;
+	margin: 10px;
+}
+
+.blog-excerpt .fa{
+	color: #3b5998;
+}
+
+#blogs .blog-footer{
+	font-size: 12px;
+}
+
+#blogs .blog-time{
+}
+
+#blogs table{
+	text-align: center;
+}
+
+#blogs tr{
+	padding: 0px;
+	margin: 0px;
+}
+
+#blogs th{
+	text-align: center;
+	color: #aaaaaa;
+}
+
+#blogs td{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	color: #aaaaaa;
+}
+
+.calendar-header{
+	font-weight: 700;
+	text-align: center;
+}
+
+#time-header{
+	display: inline-block;
+	width: 50%;
+}
+
+#calendar-left, #calendar-right{
+	display: inline-block;
+	width: 10%;
+}
+
+#time-body a{
+	color: #3b5998;
+	font-weight: 700;
+}
+
+.index-tag i{
+	font-size: 12px;
+}
+
+.index-tag{
+	display: inline-block;
+	float: left;
+	margin: 5px;
+	padding: 4px 8px 2px 8px;
+	border-radius: 8px 0 0 0;
+	background-color: #bbbbbb;
+}
+
+.index-tag:hover{
+	box-shadow: 0px 0px white, 3px 3px #aaa;
+}
+
+.index-tag a{
+	color: #eeeeee;
+}
+
+.index-tag a:hover{
+	text-decoration: none;
+}
+
+.category-item{
+	color: #aaaaaa;
+	font-style: italic;
+}
+
+.category-item:hover{
+	color: #888888;
+}
+
+.category-li{
+	list-style-type: square;
+}
+
+.page-data{
+	display: inline-block;
+	background-color: #ffffaa;
+	margin-left: 20px;
+	padding: 0 5px;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.class-find{
+	background-color: #ffffaa;
 }
