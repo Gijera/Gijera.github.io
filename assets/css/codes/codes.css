@@ -1,31 +1,38 @@
-#codes{
-	color: #555555;
+.markdownFile{
+	padding: 20px;
+	color: #555;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 90%;
+	border-radius: 8px;
+	background-color: #ddd;
+}
+
+.markdownFile a{
+	color: #555;
+}
+
+.markdownFile a:hover{
+	text-decoration: none;
+}
+
+.screenshots{
 	text-align: center;
-	margin: 20px;
 }
 
-#codes img{
-	width: 80%;
-	height: 80%;
+.screenshots h3{
+	text-align: left;
 }
 
-.big-class{
-	margin-top: 30px;
-}
-
-.project{
+.screenshot{
+	margin: 10px 20px;	
 	text-align: center;
-	transform: scale(0.95);
-	padding: 30px 15px;
-	/*padding-bottom: 0px;*/
-	margin: 10px;
+	transform: scale(1);
 	display: inline-block;
-	background-color: #f6f6f6;
-	box-shadow: 8px 8px 5px #ddd;
+	box-shadow: 8px 8px 5px #ccc;
 }
 
-.project:hover{
-	transform: scale(1.0);
-	/*background-color: #ddd;*/
+.screenshot:hover{
+	transform: scale(1.05);
 	box-shadow: 10px 10px 5px #888;
 }
