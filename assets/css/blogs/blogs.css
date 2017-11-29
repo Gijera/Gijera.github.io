@@ -147,14 +147,71 @@
 	background-color: #ffffaa;
 }
 
+/*文章样式*/
 .article-item{
-	color: #555555;
+	line-height: 175%;
+	color: #555;
 }
 
-.article-item h2{
+.article-item h1,h2,h3,h4,h5,h6{
+	font-weight: 700px;
+	padding: 5px;
+	color: #224466;
+	margin-bottom: 0px;
+}
+
+.article-item h3{
+	margin-top: 40px;
+}
+
+.article-item h4{
+	margin-top: 30px;
+}
+
+.index-title{
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.article-item .blog-title{
 	font-style: italic;
 }
 
 .article-item li{
 	list-style-type: square;
+}
+
+.article-item a{
+	color: #888;
+	text-decoration: underline;
+}
+
+.article-item h2 a{
+	color: #224466;
+}
+
+.article-item a:hover{
+	color: #446688;
+}
+
+/*描述样式*/
+.article-item dt{
+	margin-top: 5px;
+	color: #844;
+}
+
+/*代码样式*/
+.article-item samp{
+	margin: 3px;
+	padding: 3px;
+	background-color: #ccc;
+}
+
+/*警告样式*/
+.article-item .text-danger{
+	color: #aa6666;
+}
+
+.article-content{
+	padding-left: 20px;
 }

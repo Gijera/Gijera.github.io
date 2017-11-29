@@ -13,7 +13,7 @@ nav: blogs
 		</div>
 		<div class="col-md-4 col-sm-4">
 			<div id="calendar" class="index">
-				<h4><i class="fa fa-calendar"></i> 日历 <small>| Calendar</small></h4>
+				<div class="index-title"><i class="fa fa-calendar"></i> 日历 <small>| Calendar</small></div>
 				<div>
 					<table id="time-body" class="table">
 	
@@ -26,7 +26,7 @@ nav: blogs
 				</div>
 			</div>
 			<div class="index">
-				<h4><i class="fa fa-bookmark"></i> 目录 <small>| Category</small></h4>
+				<div class="index-title"><i class="fa fa-bookmark"></i> 目录 <small>| Category</small></div>
 				<div class="index-items">
 					{% for category in site.categories %}
 					<li class="category-li"><a class="category-item" href="{{site.baseurl}}/categories/{{category | first}}"> {{category | first}} ({{category | last | size}})</a></li>
@@ -34,7 +34,7 @@ nav: blogs
 				</div>
 			</div>
 			<div class="index">
-				<h4><i class="fa fa-tags"></i> 标签 <small> | Tag</small></h4>
+				<div class="index-title"><i class="fa fa-tags"></i> 标签 <small> | Tag</small></div>
 				<div class="index-items">
 					{% for tag in site.tags %}
 						<div class="index-tag"><a href="{{site.baseurl}}/tags/{{tag | first}}"><i class="fa fa-tag"></i> {{tag | first}} ({{tag | last | size}})</a></div>
