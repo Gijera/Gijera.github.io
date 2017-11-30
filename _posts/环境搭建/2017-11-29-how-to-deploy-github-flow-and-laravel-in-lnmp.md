@@ -69,7 +69,7 @@ class GithubController extends Controller
     }
 }
 {% endhighlight php %}
-如果没有使用Laravel，也可以将githubUPdate函数中的代码直接拷贝到webhook.php文件中去.上面这段代码其实是使用php来调用shell命令执行```git pull```.最好首先用一个Get路由来测试，因为上面的代码有一个日志输出，如果成功部署了Github钩子，它会显示Already up-to-date.否则会显示相应的错误，如果出现错误，可以参考后面的错误处理.如果已经成功，可以将打印日志这部分内容从代码中去掉.
+如果没有使用Laravel，也可以将githubUPdate函数中的代码直接拷贝到webhook.php文件中去.上面这段代码其实是使用php来调用shell命令执行<samp>git pull</samp>.最好首先用一个Get路由来测试，因为上面的代码有一个日志输出，如果成功部署了Github钩子，它会显示Already up-to-date.否则会显示相应的错误，如果出现错误，可以参考后面的错误处理.如果已经成功，可以将打印日志这部分内容从代码中去掉.
 
 <p class="text-danger">要注意的是，为了使php执行shell命令，必须到php.ini下将disable_function里面的exec函数删除，否则php将不能执行shell命令。</p>
 

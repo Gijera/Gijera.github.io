@@ -2,7 +2,7 @@ nav {
 	margin: 25px auto 0;
 	position: relative;
 	width: 80%;
-	background-color: #dddddd;
+	background-color: rgba(255,255,255,0.3);
 	border-radius: 8px;
 	font-size: 0;
 }
@@ -17,7 +17,7 @@ nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
-	color: #3b5998;
+	color: #2a4d69;
 	cursor: pointer;
 }
 nav a:hover{

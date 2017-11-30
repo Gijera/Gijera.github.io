@@ -6,17 +6,16 @@ nav: blogs
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/blogs/blogs.css">
 <script type="text/javascript" src="{{site.baseurl}}/assets/js/calendar.js"></script>
 
-<div class="container" id="blogs">
+<div class="container sidebar">
 	<div class="row">
 		<div class="col-md-8 col-sm-8">
 			{{content}}
 		</div>
 		<div class="col-md-4 col-sm-4">
-			<div id="calendar" class="index">
-				<div class="index-title"><i class="fa fa-calendar"></i> 日历 <small>| Calendar</small></div>
+			<div id="calendar" class="sidebar-item">
+				<div class="sidebar-item-title"><i class="fa fa-calendar"></i> 日历 <small>| Calendar</small></div>
 				<div>
 					<table id="time-body" class="table">
-	
 					</table>
 					<div class="calendar-header">
 						<span><a id="calendar-left" href=""><<</a></span>
@@ -25,20 +24,22 @@ nav: blogs
 					</div>
 				</div>
 			</div>
-			<div class="index">
-				<div class="index-title"><i class="fa fa-bookmark"></i> 目录 <small>| Category</small></div>
-				<div class="index-items">
+			<div class="sidebar-item">
+				<div class="sidebar-item-title"><i class="fa fa-bookmark"></i> 目录 <small>| Category</small></div>
+				<div class="sidebar-item-body">
 					{% for category in site.categories %}
 					<li class="category-li"><a class="category-item" href="{{site.baseurl}}/categories/{{category | first}}"> {{category | first}} ({{category | last | size}})</a></li>
 					{% endfor %}
 				</div>
 			</div>
-			<div class="index">
-				<div class="index-title"><i class="fa fa-tags"></i> 标签 <small> | Tag</small></div>
-				<div class="index-items">
+			<div class="sidebar-item">
+				<div class="sidebar-item-title"><i class="fa fa-tags"></i> 标签 <small> | Tag</small></div>
+				<div class="sidebar-item-body">
+					<div class="tag-cloud">
 					{% for tag in site.tags %}
-						<div class="index-tag"><a href="{{site.baseurl}}/tags/{{tag | first}}"><i class="fa fa-tag"></i> {{tag | first}} ({{tag | last | size}})</a></div>
+						<a href="{{site.baseurl}}/tags/{{tag | first}}"> {{tag | first}}</a>
 					{% endfor %}
+					</div>
 				</div>
 			</div>
 		</div>

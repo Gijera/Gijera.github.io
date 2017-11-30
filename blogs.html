@@ -5,21 +5,21 @@ title: blogs
 
 {% for blog in site.posts %}
 	<div class="blog-item">
-		<h3><a href="{{site.baseurl}}{{blog.url}}">{{blog.title}}</a></h3>
-		<div class="blog-footer">
+		<h3 class="blog-item-title"><a href="{{site.baseurl}}{{blog.url}}">{{blog.title}}</a></h3>
+		<div class="blog-item-info">
 			Category:
-			<span>{{blog.categories}}</span>
+			<span class="blog-item-category blog-item-label">{{blog.categories}}</span>
 			／
 			Tag: {
 			{% for tag in blog.tags %}
-				<span class="blog-tag">
+				<span class="blog-item-tag blog-item-label">
 					 {{tag}} {% unless forloop.last %},{% endunless %}
 				</span>
 			{% endfor %}
 			} ／
-			<span class="blog-time">{{blog.date | date: '%Y-%m-%d  %a'}}</span>
+			<span class="blog-item-time blog-item-label">{{blog.date | date: '%Y-%m-%d  %a'}}</span>
 		</div>
-		<div class="blog-excerpt">
+		<div class="blog-item-excerpt">
 			 <i class="fa fa-quote-left"></i> {{blog.excerpt | remove: '<p>' | remove: '</p>' }}
 		</div>
 	</div>

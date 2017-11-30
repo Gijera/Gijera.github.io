@@ -1,79 +1,43 @@
 .container{
 	width: 95%;
-}
-
-#blogs{
-	margin-top: 20px;
-	margin-bottom: 20px;
 	padding: 20px;
-	border-radius: 8px;
-	background-color: #dddddd;
+	margin-top: 20px;
 }
 
-.blog-item h3 a{
-	font-style: italic;
-	color: #555555;
-}
-
-#blogs .fa-2x{
-	font-size: 21px;
-}
-
-#blogs .index{
+/*右侧边栏样式*/
+.sidebar-item{
+	color: #4b86b4;
 	margin-top: 10px;
 	padding: 10px;
-	border-top: #3b5998 2px solid;
+	border-top: #63ace5 2px solid;
 }
 
-#blogs .index-items{
+.sidebar-item-title{
+	color: #adcbe3;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.sidebar-item-body{
 	padding-left: 10px;
 }
-
-#blogs .blog-item{
-	margin: 10px;
-	padding: 10px;
-	border-top: #3b5998 2px solid;
-}
-
-#blogs .fa-small{
-	font-size: 14px;
-}
-
-#blogs .blog-excerpt{
-	color: #999999;
-	margin: 10px;
-}
-
-.blog-excerpt .fa{
-	color: #3b5998;
-}
-
-#blogs .blog-footer{
-	font-size: 12px;
-}
-
-#blogs .blog-time{
-}
-
-#blogs table{
+/*日历样式*/
+#calendar table{
 	text-align: center;
 }
 
-#blogs tr{
-	padding: 0px;
-	margin: 0px;
+#calendar tr{
+
 }
 
-#blogs th{
-	text-align: center;
-	color: #aaaaaa;
-}
-
-#blogs td{
-	padding: 0px;
-	margin: 0px;
+#calendar th{
 	border: 0px;
-	color: #aaaaaa;
+	color: #adcbe3;
+	text-align: center;
+}
+
+#calendar td{
+	border: 0px;
 }
 
 .calendar-header{
@@ -83,7 +47,8 @@
 
 #time-header{
 	display: inline-block;
-	width: 50%;
+	width: 60%;
+	color: #adcbe3;
 }
 
 #calendar-left, #calendar-right{
@@ -91,127 +56,123 @@
 	width: 10%;
 }
 
+#calendar a{
+	color: #adcbe3;
+}
+
 #time-body a{
-	color: #3b5998;
+	color: #adcbe3;
 	font-weight: 700;
+	text-decoration: underline;
 }
 
-.index-tag i{
-	font-size: 12px;
-}
-
-.index-tag{
-	display: inline-block;
-	float: left;
-	margin: 5px;
-	padding: 4px 8px 2px 8px;
-	border-radius: 8px 0 0 0;
-	background-color: #bbbbbb;
-}
-
-.index-tag:hover{
-	box-shadow: 0px 0px white, 3px 3px #aaa;
-}
-
-.index-tag a{
-	color: #eeeeee;
-}
-
-.index-tag a:hover{
-	text-decoration: none;
-}
-
+/*目录样式*/
 .category-item{
-	color: #aaaaaa;
-	font-style: italic;
+	color: #4b86b4;
 }
 
 .category-item:hover{
-	color: #888888;
+	color: #adcbe3;
 }
 
 .category-li{
 	list-style-type: square;
 }
 
-.page-data{
+/*标签样式*/
+.tag-cloud{
+	clear: both;
+	text-align: left;
+}
+
+.tag-cloud a{
+	padding: 0px;
+	margin: 0 5px 0 0;
+	letter-spacing: 0.1em;
+	font-size: 0.8em;
+	font-weight: 100;
+}
+
+.tag-cloud a:hover{
+	text-decoration: none;
+}
+
+.tag-cloud a:nth-child(5n-4){
+	color: #d62828;
+}
+.tag-cloud a:nth-child(5n-3){
+	color: #f77f00;
+}
+.tag-cloud a:nth-child(5n-2){
+	color: #fcbf49;
+}
+.tag-cloud a:nth-child(5n-1){
+	color: #4b86b4;
+}
+.tag-cloud a:nth-child(5n){
+	color: #eae2b7;
+}
+
+.tag-cloud a:nth-child(12n-8){
+	font-size: 1.5em;
+}
+.tag-cloud a:nth-child(20n){
+	font-size: 2em;
+}
+
+/*目录页面样式*/
+.category-header{
 	display: inline-block;
-	background-color: #ffffaa;
-	margin-left: 20px;
+	color: #ffffaa;
 	padding: 0 5px;
+	padding-left: 10px;
+	margin-bottom: 20px;
 	font-size: 20px;
 	font-style: italic;
+	border-left: 5px solid #ffffaa;
+}
+
+.category-body{
+	margin-left: 10px;
 }
 
 .class-find{
-	background-color: #ffffaa;
+	color: #ffffaa;
 }
 
-/*文章样式*/
-.article-item{
-	line-height: 175%;
-	color: #555;
+/*博客单元样式*/
+.blog-item{
+	padding: 10px;
+	border: 2px solid rgba(255,255,255,0.3);
 }
 
-.article-item h1,h2,h3,h4,h5,h6{
-	font-weight: 700px;
-	padding: 5px;
-	color: #224466;
-	margin-bottom: 0px;
+.blog-item-title{
+	margin: 0px;
+	margin-bottom: 15px;
 }
 
-.article-item h3{
-	margin-top: 40px;
+.blog-item-title a{
+	color: #e7eff6;
 }
 
-.article-item h4{
-	margin-top: 30px;
-}
-
-.index-title{
+.blog-item-info{
+	/*transform: scale(0.8);*/
+	font-size-adjust: none;
+	font-size: 0.8em;
+	color: #7f8e9e;
+	margin-left: 20px;
 	margin-bottom: 10px;
-	font-size: 18px;
 }
 
-.article-item .blog-title{
-	font-style: italic;
+.blog-item-excerpt{
+	letter-spacing: 0.1em;
+	font-weight: 200;
+	font-size: 1.1em;
+	color: #adcbe3;
 }
 
-.article-item li{
-	list-style-type: square;
-}
-
-.article-item a{
-	color: #888;
-	text-decoration: underline;
-}
-
-.article-item h2 a{
-	color: #224466;
-}
-
-.article-item a:hover{
-	color: #446688;
-}
-
-/*描述样式*/
-.article-item dt{
-	margin-top: 5px;
-	color: #844;
-}
-
-/*代码样式*/
-.article-item samp{
+.blog-item-excerpt .fa{
+	font-size: 1.5em;
+	color: #4b86b4;
 	margin: 3px;
-	padding: 3px;
-	background-color: #ccc;
-}
-
-/*警告样式*/
-.article-item .text-danger{
-	color: #aa6666;
-}
-
-.article-content{
-	padding-left: 20px;
 }

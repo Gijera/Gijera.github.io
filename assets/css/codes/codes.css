@@ -15,24 +15,3 @@
 .markdownFile a:hover{
 	text-decoration: none;
 }
-
-.screenshots{
-	text-align: center;
-}
-
-.screenshots h3{
-	text-align: left;
-}
-
-.screenshot{
-	margin: 10px 20px;	
-	text-align: center;
-	transform: scale(1);
-	display: inline-block;
-	box-shadow: 8px 8px 5px #ccc;
-}
-
-.screenshot:hover{
-	transform: scale(1.05);
-	box-shadow: 10px 10px 5px #888;
-}
