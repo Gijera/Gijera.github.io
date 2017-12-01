@@ -3,6 +3,15 @@ layout: article
 title: 如何在lnmp环境下部署Laravel5.1以及Github钩子
 category: 环境搭建
 tags: lnmp Laravel L5 GithubFlow deploy
+comments:
+  - author:
+      type: full
+      displayName: Gijera
+      url: 'https://github.com/Gijera'
+      picture: 'https://avatars3.githubusercontent.com/u/24871376?v=4&s=73'
+    content: Test
+    date: 2017-12-01T04:47:08.677Z
+
 ---
 本文介绍的是如何在(阿里云ESC云服务器)Ubuntu14.04环境下搭建lnmp环境，以及在该环境下部署Laravel和github webhook(钩子)，实现在本地<samp>git pull</samp>到Github仓库中后，通过钩子自动同步到服务器。
 
