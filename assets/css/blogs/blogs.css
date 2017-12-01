@@ -93,10 +93,6 @@
 	font-weight: 100;
 }
 
-.tag-cloud a:hover{
-	text-decoration: none;
-}
-
 .tag-cloud a:nth-child(5n-4){
 	color: #d62828;
 }
@@ -143,6 +139,7 @@
 /*博客单元样式*/
 .blog-item{
 	padding: 10px;
+	margin-bottom: 20px;
 	border: 2px solid rgba(255,255,255,0.3);
 }
 

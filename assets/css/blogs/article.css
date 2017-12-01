@@ -28,7 +28,6 @@
 .article-info{
 	font-weight: 400;
 	letter-spacing: 0;
-	transform: scale(0.8);
 	color: #7f8e9e;
 	margin-left: 15px;
 }
@@ -75,4 +74,13 @@
 	letter-spacing: 0.1em;
 	color: #7f8e9e;
 	text-align: center;
+}
+
+/*页脚样式*/
+.pager a{
+	color: #adcbe3;
+}
+
+.pager a:hover{
+	color: #4b86b4;
 }

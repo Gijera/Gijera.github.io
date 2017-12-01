@@ -8,10 +8,10 @@ nav: blogs
 
 <div class="container sidebar">
 	<div class="row">
-		<div class="col-md-8 col-sm-8">
+		<div class="col-lg-9 col-md-8 col-sm-8">
 			{{content}}
 		</div>
-		<div class="col-md-4 col-sm-4">
+		<div class="col-lg-3 col-md-4 col-sm-4">
 			<div id="calendar" class="sidebar-item">
 				<div class="sidebar-item-title"><i class="fa fa-calendar"></i> 日历 <small>| Calendar</small></div>
 				<div>
@@ -78,6 +78,13 @@ nav: blogs
 	{% elsif page.date %}
 		var year = '{{page.date | date: "%Y"}}';
 		var month = '{{page.date | date: "%m"}}';
+		date.setFullYear(year);
+		date.setMonth(month-1);
+	{% else %}
+		var dateString = calendarDateArray[0];
+		var dateArray = dateString.split('-');
+		var year = dateArray[0];
+		var month = dateArray[1];
 		date.setFullYear(year);
 		date.setMonth(month-1);
 	{% endif %}

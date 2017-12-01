@@ -70,7 +70,7 @@ function showCalendar(showDate){
             if(calendarArray[i][j] !== 0){
                 var indexOne = showDate.getFullYear() + '-' + ('0'+(showDate.getMonth()+1)).slice(-2);
                 var indexTwo = ('0'+calendarArray[i][j]).slice(-2);
-                if(calendarDateUrlArray[indexOne].hasOwnProperty(indexTwo)){
+                if(calendarDateUrlArray.hasOwnProperty(indexOne) && calendarDateUrlArray[indexOne].hasOwnProperty(indexTwo)){
                     tableBodyHtml += ("<a href='"+calendarDateUrlArray[indexOne][indexTwo]+"'>");
                     tableBodyHtml += calendarArray[i][j];
                     tableBodyHtml += "</a>";
@@ -91,9 +91,8 @@ function showCalendar(showDate){
     var calendarRight = document.getElementById('calendar-right');
     var leftLink = '';
     var rightLink = '';
-    showDate.setMonth(showDate.getMonth()+1);
-    var currentDateString = showDate.getFullYear() + '-' + ('0'+showDate.getMonth()).slice(-2);
-    for(var i = 0; i < calendarDateArray.length; i++){
+    var currentDateString = showDate.getFullYear() + '-' + ('0'+(showDate.getMonth()+1)).slice(-2);
+    for(var i = 0; i < calendarDateArray.length; i++){        
         if(currentDateString == calendarDateArray[i]){
             if(i != 0){
                 rightLink = '/calendar/'+calendarDateArray[i-1];
