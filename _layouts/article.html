@@ -2,6 +2,7 @@
 layout: blogs
 ---
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/blogs/article.css">
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/blogs/comment.css">
 
 <div class="article-item">
 	<h2 class="article-title"><a href="{{page.url}}">{{page.title}}</a></h2>
@@ -32,9 +33,10 @@ layout: blogs
 	{% endif %}
 </ul>
 
-<div>
+<div class="comment-block">
+	<hr>
 	{% if page.comments %}
-	  {% assign sorted_comments = (page.comments | sort: 'date') %}
+	  {% assign sorted_comments = page.comments | sort: 'date' %}
 	{% endif %}
 	{% for c in sorted_comments %}
 	  <div class="media">
@@ -53,7 +55,8 @@ layout: blogs
 	  There are no comments on this post.
 	{% endfor %}
 </div>
-<div>
+
+<div class="comment-js">
 	<noscript>Please enable JavaScript to view the comment form powered by <a href="https://commentit.io/">Comm(ent|it)</a></noscript>
 	<div id="commentit"></div>
 	<script type="text/javascript">
