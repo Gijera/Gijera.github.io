@@ -1,0 +1,19 @@
+.comment-block{
+	padding: 10px;
+}
+
+.comment-block a{
+	color: #adcbe3;	
+}
+
+.comment-block a:hover{
+	color: #4b86b4;
+}
+
+.media{
+	margin-bottom: 10px;
+}
+
+.comment-js{
+	margin-bottom: 20px;
+}

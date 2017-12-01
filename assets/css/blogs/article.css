@@ -26,10 +26,16 @@
 }
 
 .article-info{
+	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 0;
 	color: #7f8e9e;
 	margin-left: 15px;
+}
+
+.article-view{
+	font-size: 12px;
+	margin-right: 20px;
 }
 
 .article-content{
