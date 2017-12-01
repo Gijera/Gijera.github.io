@@ -6,12 +6,12 @@ nav: blogs
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/blogs/blogs.css">
 <script type="text/javascript" src="{{site.baseurl}}/assets/js/calendar.js"></script>
 
-<div class="container sidebar">
+<div class="container">
 	<div class="row">
 		<div class="col-lg-9 col-md-8 col-sm-8">
 			{{content}}
 		</div>
-		<div class="col-lg-3 col-md-4 col-sm-4">
+		<div class="col-lg-3 col-md-4 col-sm-4 sidebar">
 			<div id="calendar" class="sidebar-item">
 				<div class="sidebar-item-title"><i class="fa fa-calendar"></i> 日历 <small>| Calendar</small></div>
 				<div>
@@ -42,6 +42,25 @@ nav: blogs
 					</div>
 				</div>
 			</div>
+			<div class="move-top">
+				<button onclick="topFunction()" id="topBtn" ><i class="fa fa-hand-o-up"></i> 返回顶部</button>
+			</div>
+			<script>
+			window.onscroll = function() {scrollFunction()};
+			 
+			function scrollFunction() {
+			    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+			        document.getElementById("topBtn").style.display = "block";
+			    } else {
+			        document.getElementById("topBtn").style.display = "none";
+			    }
+			}
+			 
+			function topFunction() {
+			    document.body.scrollTop = 0;
+			    document.documentElement.scrollTop = 0;
+			}
+			</script>
 		</div>
 	</div>
 </div>

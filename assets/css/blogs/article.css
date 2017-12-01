@@ -90,3 +90,16 @@
 .pager a:hover{
 	color: #4b86b4;
 }
+
+/*返回顶部*/
+.move-top button{
+	color: #4b86b4;
+	border: 0px;
+	box-shadow: none;
+	background-color: rgba(0,0,0,0);
+}
+
+#topBtn{
+	display: none;
+	position: fixed;
+}
