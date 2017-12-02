@@ -1,4 +1,3 @@
 baseurl: ''
 exclude: ['README.md']
-permalink: pretty
 encoding: UTF-8
