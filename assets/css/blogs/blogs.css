@@ -108,6 +108,13 @@
 .tag-cloud a:nth-child(5n){
 	color: #eae2b7;
 }
+/*surprise color*/
+.tag-cloud a:nth-child(10n-4){
+	color: #65c3ba;
+}
+.tag-cloud a:nth-child(15n-8){
+	color: #8874a3;
+}
 
 .tag-cloud a:nth-child(12n-8){
 	font-size: 1.5em;
