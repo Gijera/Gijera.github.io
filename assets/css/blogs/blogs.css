@@ -186,10 +186,11 @@
 	top: 80%;
 	left: 70%;
 	position: fixed;
-	color: #4b86b4;
+	color: #ffffff;
 	border: 0px;
 	box-shadow: none;
-	background-color: rgba(0,0,0,0);
+	border-radius: 8px;
+	background-color: #555;
 }
 
 #topBtn{
