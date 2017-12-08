@@ -4,7 +4,7 @@ title: Laravel搭建博客 (添加与显示文章)
 category: Laravel
 tags: Laravel L5 Blog
 ---
-本文描述了如何通过表单发送Post请求来添加文章以及显示文章，学习过程主要参考了Laravel官方手册以及JefferyWay的视频教程。
+本文描述了如何通过表单发送Post请求来添加文章以及显示文章，介绍了Laravel的表单验证及一些安全性。
 
 ### 使用表单添加文章
 <strong>1.添加Get路由<samp>'/posts/create'</samp></strong>
@@ -220,7 +220,7 @@ public function index(){
 </h2>
 {% endraw %}
 {% endhighlight %}
-现在来设置每一篇文章的页面，之前添加过一个路由：<samp>Route::get('/posts/{post}','PostsController@show');</samp>，后面在我们添加create路由时将它注释了，这里取消注释。然后到PostsController的show方法中传递post参数给posts/show视图，这里我们使用路由模型绑定，否则create页面将会被当作id传递给show方法。
+现在来设置每一篇文章的页面，之前添加过一个路由：<samp>Route::get('/posts/{post}','PostsController@show');</samp>，后面在我们添加create路由时将它注释了，这里取消注释。然后到PostsController的show方法中传递post参数给posts/show视图，这里我们使用路由模型绑定，路由模型绑定可以参考[Laravel路由——路由模型绑定](https://d.laravel-china.org/docs/5.1/routing#路由模型绑定)。
 {% highlight php %}
 {% raw %}
 //路由模型绑定：在app/Provider/RouteServiceProvider.php的boot方法中添加:
@@ -234,9 +234,15 @@ public function boot(Router $router)
 public function show(Post $post){
 	return view('posts.show',compact('post'));
 }
+
+//如果没有使用路由模型绑定，在show方法中使用id作为参数
+public function show($id){
+	$post = Post::find($id);
+	return view('posts.show',compact('post'));
+}
 {% endraw %}
 {% endhighlight %}
-路由模型绑定可以参考[Laravel显示任务清单](https://gijera.github.io/laravel/2017/12/05/Learn-laravel-show-tasks-with-jefferyWay.html)。最后在posts/show视图中显示文章：
+最后在posts/show视图中显示文章：
 {% highlight php %}
 {% raw %}
 @extends('layouts.master')
