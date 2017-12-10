@@ -1,3 +1,9 @@
+body{
+	background: -webkit-linear-gradient(-135deg,#051e3e , #251e3e , #451e3e);
+    background: -o-linear-gradient(-135deg,#051e3e , #251e3e , #451e3e);
+    background: -moz-linear-gradient(-135deg,#051e3e , #251e3e , #451e3e);
+    background: linear-gradient(-135deg,#051e3e , #251e3e , #451e3e);
+}
 .container{
 	width: 95%;
 	padding: 20px;

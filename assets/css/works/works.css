@@ -1,0 +1,6 @@
+body{
+    background: -webkit-repeating-radial-gradient(#051e3e , #251e3e , #451e3e); /* Safari 5.1 - 6.0 */
+    background: -o-repeating-radial-gradient(#051e3e , #251e3e , #451e3e); /* Opera 11.1 - 12.0 */
+    background: -moz-repeating-radial-gradient(#051e3e , #251e3e , #451e3e); /* Firefox 3.6 - 15 */
+    background: repeating-radial-gradient(#051e3e , #251e3e 50% , #451e3e); /* 标准的语法 */
+}

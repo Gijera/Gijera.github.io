@@ -1,5 +1,12 @@
+body{
+    background: -webkit-linear-gradient(180deg, #051e3e , #251e3e , #451e3e); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(180deg, #051e3e , #251e3e , #451e3e); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(180deg,#051e3e , #251e3e , #451e3e); /* Firefox 3.6 - 15 */
+    background: linear-gradient(180deg, #051e3e , #251e3e , #451e3e); /* 标准的语法 */
+}
 .container{
     margin-top: 20px;
+    min-height: 750px;
 }
 
 .series-card-details{
@@ -25,7 +32,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background: rgba(0, 0, 0, .7);
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(150,150,150,0.8));
     -webkit-transition: opacity .6s;
     transition: opacity .6s
 }
@@ -33,7 +40,7 @@
 
 .series-card-details{
     font-weight: 700;
-    color: #aaa;
+    color: #ddd;
 }
 
 .series-card:hover .series-card-details {
@@ -54,6 +61,8 @@
     right: 0;
     background: rgba(0, 177, 179, .8);
     color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.1em;
     padding: 10px 15px;
     z-index: 20
 }
