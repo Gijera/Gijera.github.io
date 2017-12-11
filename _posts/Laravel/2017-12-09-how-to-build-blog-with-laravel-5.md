@@ -2,7 +2,7 @@
 layout: article
 title: Laravel搭建博客 (文章归档)
 category: Laravel
-tags: Laravel L5 Blog
+tags: Laravel L5 Blog Anchives
 ---
 将文章按照时间顺序归档，进一步了解查询构造器。
 

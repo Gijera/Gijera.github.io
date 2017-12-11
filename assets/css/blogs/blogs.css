@@ -100,7 +100,7 @@ body{
 }
 
 .tag-cloud a:nth-child(5n-4){
-	color: #d62828;
+	color: #eae2b7;
 }
 .tag-cloud a:nth-child(5n-3){
 	color: #f77f00;
@@ -112,9 +112,13 @@ body{
 	color: #4b86b4;
 }
 .tag-cloud a:nth-child(5n){
-	color: #eae2b7;
+	color: #ff8b94;
 }
 /*surprise color*/
+.tag-cloud a:nth-child(10n){
+	color: #00b159;
+}
+
 .tag-cloud a:nth-child(10n-4){
 	color: #65c3ba;
 }
@@ -124,9 +128,6 @@ body{
 
 .tag-cloud a:nth-child(12n-8){
 	font-size: 1.5em;
-}
-.tag-cloud a:nth-child(20n){
-	font-size: 2em;
 }
 
 /*目录页面样式*/

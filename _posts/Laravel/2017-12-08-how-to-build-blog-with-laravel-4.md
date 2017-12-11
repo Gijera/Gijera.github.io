@@ -2,7 +2,7 @@
 layout: article
 title: Laravel搭建博客 (添加用户)
 category: Laravel
-tags: Laravel L5 Blog
+tags: Laravel L5 Blog User
 ---
 文章和评论都已经有了，可以添加用户来控制对文章和评论的管理，主要涉及到用户认证、登陆注册等常用功能。
 

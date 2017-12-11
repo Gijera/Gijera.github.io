@@ -2,7 +2,7 @@
 layout: article
 title: Laravel搭建博客 (给文章添加评论)
 category: Laravel
-tags: Laravel L5 Blog
+tags: Laravel L5 Blog Comment
 ---
 本文介绍了如何给文章添加评论，使用Eloquent给评论与文章建立模型关联，让数据库之间的关系能够直接在对象中反映出来。
 

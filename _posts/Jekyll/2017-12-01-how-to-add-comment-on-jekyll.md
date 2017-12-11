@@ -2,7 +2,7 @@
 layout: article
 title: 使用Comm(ent|it)为Jekyll静态博客添加评论
 category: Jekyll
-tags: Jekyll Comm(ent|it)
+tags: Jekyll Comm(ent/it)
 ---
 本文介绍了如何使用Comm(ent/it)为Jekyll静态博客添加评论，Comm(ent/it)使用的原理是：评论时需要授权Github、Facebook或Twitter账号，当有人评论时会自动提交一个Pull Request，作者通过合并请求来为博客添加评论，评论即添加在每篇文章的yml头信息里，可以在网站中调用comments变量来获得所有的评论。
 

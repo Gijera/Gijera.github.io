@@ -2,7 +2,7 @@
 layout: article
 title: Laravel搭建博客 (添加与显示文章)
 category: Laravel
-tags: Laravel L5 Blog
+tags: Laravel L5 Blog Post
 ---
 本文描述了如何通过表单发送Post请求来添加文章以及显示文章，介绍了Laravel的表单验证及一些安全性。
 
