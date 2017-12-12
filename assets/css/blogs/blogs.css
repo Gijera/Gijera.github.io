@@ -163,14 +163,14 @@ body{
 }
 
 .blog-item-title a{
-	color: #e7eff6;
+	color: #d7dee6;
 }
 
 .blog-item-info{
 	/*transform: scale(0.8);*/
 	font-size-adjust: none;
 	font-size: 0.8em;
-	color: #7f8e9e;
+	color: #5b5b5b;
 	margin-left: 20px;
 	margin-bottom: 10px;
 }
@@ -179,7 +179,7 @@ body{
 	letter-spacing: 0.1em;
 	font-weight: 200;
 	font-size: 1.1em;
-	color: #adcbe3;
+	color: #6b89a1;
 }
 
 .blog-item-excerpt .fa{

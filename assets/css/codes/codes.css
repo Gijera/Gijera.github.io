@@ -32,7 +32,8 @@ body{
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(150,150,150,0.8));
+    /*background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(120,120,120,0.8) 20%, rgba(0,0,0,0.8));*/
+    background-color: rgba(0,0,0,0.5);
     -webkit-transition: opacity .6s;
     transition: opacity .6s
 }
@@ -40,7 +41,12 @@ body{
 
 .series-card-details{
     font-weight: 700;
+    letter-spacing: 0.1em;
     color: #ddd;
+}
+
+.series-card-details p{
+    text-align: right;
 }
 
 .series-card:hover .series-card-details {
@@ -130,4 +136,30 @@ body{
     to {
         opacity: 1
     }
+}
+
+/*language bright color*/
+.cplusplus{
+    color: #ffe066;
+}
+
+.c{
+    color: #fe938c;
+}
+
+.php{
+    color: #9F86C0;
+}
+
+/*API dark color*/
+.sdl{
+    color: #E9FF70;
+}
+
+.cocos2d{
+    color: #F7B801;
+}
+
+.laravel{
+    color: #E0B1CB;
 }
