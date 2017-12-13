@@ -3,6 +3,10 @@ body{
     background: -o-linear-gradient(-135deg,#051e3e , #251e3e , #451e3e);
     background: -moz-linear-gradient(-135deg,#051e3e , #251e3e , #451e3e);
     background: linear-gradient(-135deg,#051e3e , #251e3e , #451e3e);
+    background-image: url(http://ozwfmed7j.bkt.clouddn.com/blog-background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 .container{
 	width: 95%;
@@ -99,6 +103,10 @@ body{
 	font-weight: 100;
 }
 
+.tag-cloud a:hover{
+	font-weight: 700;
+}
+
 .tag-cloud a:nth-child(5n-4){
 	color: #eae2b7;
 }
@@ -179,7 +187,7 @@ body{
 	letter-spacing: 0.1em;
 	font-weight: 200;
 	font-size: 1.1em;
-	color: #6b89a1;
+	color: #bbd9f1;
 }
 
 .blog-item-excerpt .fa{

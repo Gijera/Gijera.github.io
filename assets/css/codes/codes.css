@@ -138,6 +138,11 @@ body{
     }
 }
 
+.small-title{
+    color: #eee;
+    font-weight: 700;
+}
+
 /*language bright color*/
 .cplusplus{
     color: #ffe066;
