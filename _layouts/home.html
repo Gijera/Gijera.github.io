@@ -6,6 +6,45 @@ nav: home
 
 {{content}}
 
-<div class="home-footer text-center">
-  	<div align="center"><a href="http://www.amazingcounters.com"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3218865&c=9656908" alt="AmazingCounters.com"></a></div>
+<div class="container">
+	<div class="row">		
+		<div class="col-md-8 idol-div">
+			<div class="idol">
+				<h3>最近文章</h3>
+				{% for post in site.posts limit:8 %}
+					<li>
+						<a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+					</li>
+				{% endfor %}
+				<p class="text-right"><a href="{{site.baseurl}}/blogs/">阅读更多...</a></p>
+			</div>
+			{% for idol in site.data.idols %}
+			<div class="idol">
+				{{idol.quotes}}
+				<p class="text-right">—— {{idol.auth}}</p>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="sidebar col-md-4">
+			<div class="sidebar-block aboutme">
+				<div class="social">
+					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="#"><i class="fa fa-rss"></i></a>
+					<a href="#"><i class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+			<div class="sidebar-block visitor">
+				<div class="home-footer text-center">
+	  				<div align="center">
+	  					Gijera星球第 <img border="0" src="http://cc.amazingcounters.com/counter.php?i=3218865&c=9656908" alt="AmazingCounters.com"> 位登陆者
+	  				</div>
+	  				<div class="text-center visitor-like">
+						<img src="https://avatars2.githubusercontent.com/u/24871376?s=460&v=4">
+						<img src="http://ozwfmed7j.bkt.clouddn.com/Cartman-no-hat-0.png">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdqcUTfiUumZolExcXxPL3JvY7sav7XtT2Ezcz7HrdY_FwUMj2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
