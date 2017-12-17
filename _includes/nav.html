@@ -1,9 +1,0 @@
-<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/nav.css">
-
-<nav>
-	<a href="{{site.baseurl}}/" class="{% if layout.nav == 'home' %}nav-current{% endif %}"> :HOME </a>
-	<a href="{{site.baseurl}}/codes/" class="{% if layout.nav == 'codes' %}nav-current{% endif %}"> ^CODE </a>
-	<a href="{{site.baseurl}}/blogs/" class="{% if layout.nav == 'blogs' %}nav-current{% endif %}"> &#9824;BLOG </a>
-	<a href="{{site.baseurl}}/works/" class="{% if layout.nav == 'works' %}nav-current{% endif %}"> $WORK </a>
-	<div class="animation start-{% if layout.nav contains 'codes' %}code{% elsif layout.nav contains 'blogs' %}blog{% elsif layout.nav contains 'works' %}works{% else %}home{% endif %}"></div>
-</nav>
